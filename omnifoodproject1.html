@@ -1,0 +1,3940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        background-color: #ffe3e3;
+        border-radius: 15px;
+        height: 850px;
+        width: 1325px;
+    }
+    .img{
+        position: absolute;
+        top: 40px;
+        left: 100px;
+    }
+    .img:hover{
+        border: 5px solid orangered;
+        height: 35px;
+        width: 240px;
+    }
+    .menu {
+        align-items: center;
+        gap: 25px;
+        display: flex;
+        padding: 0 35px;
+    }
+    .h1{
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 170px;
+        left: 100px;
+        position: absolute;
+        font-weight: bold;
+    }
+    .img1{
+        position: absolute;
+        top: 200px;
+        left: 700px;
+    }
+    ul li{
+        list-style: none;
+    }
+    .p{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #868e96;
+        position: absolute;
+        top: 440px;
+        left: 100px;
+    }
+    .a{
+        position: absolute;
+        top: 40px;
+        right: 660px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        font-style: Arial, Helvetica, sans-serif;
+    }
+    .a:hover{
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 120px;
+    }
+    .b{
+        position: absolute;
+        top: 40px;
+        right: 550px;
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: Arial, Helvetica, sans-serif;
+        color: black;
+
+    }
+    .b:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 60px;
+    }
+    .c{
+        position: absolute;
+        top: 40px;
+        right: 390px;
+        font-weight: bold;
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        font-style: Arial, Helvetica, sans-serif;
+        color: black;
+    
+    }
+    .c:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 110px;
+    }
+    .d{
+        position: absolute;
+        top: 40px;
+        right: 280px;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+    .d:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 70px;
+    }
+    .e{
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        border: none;
+        border-radius: 4px;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 15px;
+        font-style: Arial, Helvetica, sans-serif;
+        background-color: #e67700;
+       }
+    .e:hover{
+        border: 5px solid #e67700;
+        height: 60px;
+        width: 140px;
+    }
+    .whitebutton{
+        border: none;
+        border-radius: 17px;
+        position: absolute;
+        top: 620px;
+        left: 340px;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        font-size: 16px;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+        display: inline-block;
+    }
+    .button1{
+        border: none;
+        border-radius: 17px;
+        position: absolute;
+        top: 620px;
+        left: 100px;
+        background-color: #e67700;
+        color: black;
+        padding: 15px;
+        font-size: 16px;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+        display: inline-block;
+    }
+    .button1:hover{
+        background-color: lightsalmon;
+    }
+    .img2{
+        position: absolute;
+        top: 630px;
+        left: 130px;
+    }
+    .p1{
+        position: absolute; 
+        top: 750px;
+        left: 320px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #e67700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p2{
+        position: absolute;
+        top: 750px;
+        left: 420px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    .img31{
+        position: absolute;
+        top: 750px;
+        left: 60px;
+        border-radius: 200%;
+    }
+    .img32{
+        position: absolute;
+        top: 750px;
+        left: 90px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .img33{
+        position: absolute;
+        top: 750px;
+        left: 120px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    } 
+    .img34{
+        position: absolute;
+        top: 750px;
+        left: 150px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .img35{
+        position: absolute;
+        top: 750px;
+        left: 180px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .img36{
+        position: absolute;
+        top: 750px;
+        left: 210px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .body1{
+        background-color: #f8f9fa;
+        height:3200px;
+        width: 1325px;
+    }
+    .p3{
+        position: absolute;
+        color: #868e96;
+        top: 895px;
+        left: 600px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img3{
+        position: absolute;
+        top: 1000px;
+        left: 90px;
+        font: #868e96;
+    }
+    .img4{
+        position: absolute;
+        top: 1000px;
+        left: 350px;
+        font: #868e96;
+    }
+    .img5{
+        position: absolute;
+        top: 1000px;
+        left: 600px;
+        font: #868e96;
+    }
+    .img6{
+        position: absolute;
+        top: 1000px;
+        right: 300px;
+        font: #868e96;
+    }
+    .img7{
+        position: absolute;
+        top: 1000px;
+        right: 50px;
+        color: #868e96;
+    }
+    .p4{
+        position: absolute;
+        top: 1100px;
+        left: 40px;
+        color: #d9480f;
+        font-size: 19px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h2{
+        position: absolute;
+        top: 1150px;
+        left: 55px;
+        color: black;
+        font-size: 43px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p5{
+        position: absolute;
+        top: 1300px;
+        left: 55px;
+        color: #dee2e6;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p6{
+        position: absolute;
+        top: 1520px;
+        left: 55px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img8{
+        position: absolute;
+        top: 1400px;
+        right: 250px;
+    }
+    .dcle{
+        position: absolute;
+        top: 1410px;
+        right: 150px;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: #fff5f5;
+    }
+    .lcle{
+        position: absolute;
+        top: 1460px;
+        right: 200px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #ffdeeb;
+    }
+    .p7{
+        position: absolute;
+        top: 1590px;
+        left: 55px;
+        color: #495057;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .img9{
+        position: absolute;
+        top: 1980px;
+        left: 250px;
+    }
+    .lcicr{
+        position: absolute;
+        border-radius: 50%;
+        left: 150px;
+        top: 2000px;
+        background-color: #fff5f5;
+        height: 400px;
+        width: 400px;
+    }
+    .dcicr{
+        position: absolute;
+        top: 2050px;
+        right: 840px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #ffdeeb;
+    }
+    .p8{
+        position: absolute;
+        top: 1930px;
+        right: 600px;
+        color: #dee2e6;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p9{
+        position: absolute;
+        top: 2130px;
+        left: 630px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p10{
+        position: absolute;
+        top: 2200px;
+        left: 630px;
+        color: #495057;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .p11{
+        position: absolute;
+        top: 2550px;
+        left: 55px;
+        color: #dee2e6;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p12{
+        position: absolute;
+        top: 2750px;
+        left: 55px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .lcle{
+        position: absolute;
+        border-radius: 50%;
+        right: 150px;
+        top: 2630px;
+        background-color: #fff5f5;
+        height: 400px;
+        width: 400px;
+    }
+    .dcle{
+        position: absolute;
+        top: 2680px;
+        right: 200px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #ffdeeb;
+    }
+    .img10{
+        position: absolute;
+        top: 2600px;
+        right: 250px;
+    }
+    .p13{
+        position: absolute;
+        top: 2820px;
+        left: 55px;
+        color: #495057;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .h3{
+        position: absolute; 
+        top: 3100px;
+        left: 650px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #f03e3e;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h4{ 
+        position: absolute; 
+        top: 3150px;
+        left: 300px;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+    .whitebox{
+        position: absolute;
+        top: 3330px;
+        left: 100px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 500px;
+        width: 330px;
+    }
+    .whitebox:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .whitebox1{
+        position: absolute;
+        top: 3330px;
+        left: 500px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 500px;
+        width: 330px;
+    }
+    .whitebox1:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .img11{
+        position: absolute;
+        top: 3330px;
+        left: 100px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .img11:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .img12{
+        position: absolute;
+        top: 3330px;
+        left: 500px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }    
+    .img12:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .vegbtn{
+        position: absolute;
+        top: 3570px;
+        left: 150px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+    }
+    .tick{
+        position: absolute;
+        top: 3370px;
+        right: 400px;
+        color: #e67700;
+    }
+    .vegbtn1{
+        position: absolute;
+        top: 3570px;
+        left: 550px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+    }
+    .vegbtn2{
+        position: absolute;
+        top: 3570px;
+        left: 640px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+    }
+    .p14{
+        position: absolute;
+        top: 3590px;
+        left: 130px;
+        color: black;
+        font-size: 27px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p15{
+        position: absolute;
+        top: 3590px;
+        left: 530px;
+        color: black;
+        font-size: 27px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fork{
+        position: absolute;
+        top: 3650px;
+        left: 150px;
+        color: #d9480f;
+    }
+    .p16{
+        position: absolute;
+        top: 3660px;
+        left: 190px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fire{
+        position: absolute;
+        top: 3700px;
+        left: 150px;
+        color: #d9480f;
+    }
+    .p17{
+        position: absolute;
+        top: 3710px;
+        left: 190px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .star{
+        position: absolute;
+        top: 3750px;
+        left: 150px;
+        color: #d9480f;
+    }
+    .p18{
+        position: absolute;
+        top: 3760px;
+        left: 190px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fork1{
+        position: absolute;
+        top: 3650px;
+        left: 540px;
+        color: #d9480f;
+    }
+    .p19{
+        position: absolute;
+        top: 3660px;
+        left: 580px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fire1{
+        position: absolute;
+        top: 3700px;
+        left: 540px;
+        color: #d9480f;
+    }
+    .p20{
+        position: absolute;
+        top: 3710px;
+        left: 580px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .star1{
+        position: absolute;
+        top: 3750px;
+        left: 540px;
+        color: #d9480f;
+    }
+    
+    .p21{
+        position: absolute;
+        top: 3760px;
+        left: 580px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h5{
+        position: absolute;
+        top: 3290px;
+        right: 180px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h6{
+        position: absolute;
+        top: 3340px;
+        right: 270px;
+        color: #495057;
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h61{
+        position: absolute;
+        top: 3390px;
+        right: 310.5px;
+        color: #495057;
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h62{
+        position: absolute;
+        top: 3445px;
+        right: 250px;
+        color:#495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h63{
+        position: absolute;
+        top: 3495px;
+        right: 250px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h64{
+        position: absolute;
+        top: 3545px;
+        right: 235px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h65{
+        position: absolute;
+        top: 3595px;
+        right: 320px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h66{
+        position: absolute;
+        top: 3650px;
+        right: 310px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h67{
+        position: absolute;
+        top: 3705px;
+        right: 220px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h68{
+        position: absolute;
+        top: 3752px;
+        right: 250px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p22{
+        position: absolute;
+        top: 3940px;
+        right: 600px;
+        color: #e67700;
+        font-size: 17px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p22.hover{
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 100px;
+    }
+    .body2{
+        background-color: #ffe3e3;
+        border-radius: 15px;
+        height: 1050px;
+        width: 1325px;
+    }
+    .p23{
+        position: absolute;
+        top: 4170px;
+        left: 120px;
+        color: #e67700;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    .h7{
+        position: absolute;
+        top: 4200px;
+        left: 120px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 44px;
+    }
+    .img13{
+        position: absolute;
+        top: 4400px;
+        left: 120px;
+        border-radius: 80%;
+    }
+    .p24{
+        position: absolute;
+        top: 4490px;
+        left: 120px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img14{
+        position: absolute;
+        top: 4400px;
+        left: 420px;
+        border-radius: 80%;
+    }
+    .p25{
+        position: absolute;
+        top: 4490px;
+        left: 420px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img15{
+        position: absolute;
+        top: 4740px;
+        left: 120px;
+        border-radius: 80%;
+    }
+    .p26{
+        position: absolute;
+        top: 4840px;
+        left: 120px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img16{
+        position: absolute;
+        top: 4740px;
+        left: 420px;
+        border-radius: 80%;
+    }
+    .p27{
+        position: absolute;
+        top: 4840px;
+        left: 420px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img17{
+        position: absolute;
+        top: 4250px;
+        left: 720px;
+    }
+    .img18{
+        position: absolute;
+        top: 4250px;
+        left: 910px;
+    }
+    .img19{
+        position: absolute;
+        top: 4250px;
+        left: 1100px;
+    }
+    .img20{
+        position: absolute;
+        top: 4445px;
+        left: 720px;
+    }
+    .img21{
+        position: absolute;
+        top: 4445px;
+        left: 910px;
+    }
+    .img22{
+        position: absolute;
+        top: 4445px;
+        left: 1100px;
+    }
+    .img23{
+        position: absolute;
+        top: 4640px;
+        left: 720px;
+    }
+    .img24{
+        position: absolute;
+        top: 4640px;
+        left: 910px;
+    }
+    .img25{
+        position: absolute;
+        top: 4640px;
+        left: 1100px;
+    }
+    .img26{
+        position: absolute;
+        top: 4840px;
+        left: 720px;
+    }
+    .img27{
+        position: absolute;
+        top: 4840px;
+        left: 910px;
+    }
+    .img28{
+        position: absolute;
+        top: 4840px;
+        left: 1100px;
+    }
+    .body3{
+        background-color: #f1f3f5;
+        height: 2500px;
+        width: 1325px;
+    }
+    .p28{
+        position: absolute;
+        top: 5210px;
+        left: 120px;
+        color: #d9480f;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }   
+    .h8{
+        position: absolute;
+        top: 5240px;
+        left: 120px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 43px;
+    }   
+    .whitebox3{
+        position: absolute;
+        top: 5400px;
+        left: 250px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 600px;
+        width: 400px;
+    }
+    .pinkbox{
+        position: absolute;
+        top: 5400px;
+        left: 700px;
+        background-color: #ffdeeb;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 600px;
+        width: 400px;
+    }
+    .p29{
+        position: absolute;
+        top: 5450px;
+        left: 410px;
+        color: #e67700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }   
+    .p30{
+        position: absolute;
+        top: 5450px;
+        right: 400px;
+        color: #e67700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }   
+    .p31{
+        position: absolute;
+        top: 5500px;
+        left: 385px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+    }   
+    .p32{
+        position: absolute;
+        top: 5500px;
+        right: 505px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+    }   
+    .p33{
+        position: absolute;
+        top: 5430px;
+        left: 405px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+    }   
+    .p34{
+        position: absolute;
+        top: 5430px;
+        right: 395px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+    } 
+    .tick1{
+        position: absolute;
+        top: 5655px;
+        left: 350px;
+        color: #e67700;
+    }
+    .p35{
+        position: absolute;
+        top: 5600px;
+        left: 330px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+    }  
+    .tick2{
+        position: absolute;
+        top: 5655px;
+        right: 550px;
+        color: #e67700;
+    } 
+    .p36{
+        position: absolute;
+        top: 5600px;
+        right: 320px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+    }     
+    .p37{
+        position: absolute;
+        top: 5660px;
+        left: 395px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p38{
+        position: absolute;
+        top: 5715px;
+        left: 395px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p39{
+        position: absolute;
+        top: 5770px;
+        left: 395px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p40{
+        position: absolute;
+        top: 5660px;
+        right: 380px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p41{
+        position: absolute;
+        top: 5710px;
+        right: 420px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p42{
+        position: absolute;
+        top: 5765px;
+        right: 380px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    .p43{
+        position: absolute;
+        top: 5815px;
+        right: 265px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }    
+    .sew{
+        position: absolute;
+        top: 5900px;
+        left: 350px;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        border-radius: 10px;
+    }
+    .sew1{
+        position: absolute;
+        top: 5900px;
+        right: 340px;
+        color: white;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    }     
+    .p44{
+        position: absolute;
+        top: 6050px;
+        left: 350px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #495057;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .circle{
+        position: absolute;
+        top: 6150px;
+        left: 120px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .infin{
+        position: absolute;
+        top: 6142px;
+        left: 140px;
+        color: #d9480f;
+    }
+    .h9{
+        position: absolute;
+        top: 6230px;
+        left: 110px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p45{
+        position: absolute;
+        top: 6300px;
+        left: 110px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .circle1{
+        position: absolute;
+        top: 6150px;
+        left: 455px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .apple{
+        position: absolute;
+        top: 6142px;
+        left: 470px;
+        color: #d9480f;
+    }
+    .h10{
+        position: absolute;
+        top: 6230px;
+        left: 445px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p46{
+        position: absolute;
+        top: 6300px;
+        left: 445px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .circle2{
+        position: absolute;
+        top: 6150px;
+        left: 770px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .leaf{
+        position: absolute;
+        top: 6142px;
+        left: 780px;
+        color: #d9480f;
+    }
+    .h11{
+        position: absolute;
+        top: 6230px;
+        left: 760px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p47{
+        position: absolute;
+        top: 6300px;
+        left: 760px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .circle3{
+        position: absolute;
+        top: 6150px;
+        left: 1020px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .parallel{
+        position: absolute;
+        top: 6142px;
+        left: 1030px;
+        color: #d9480f;
+    }
+    .h12{
+        position: absolute;
+        top: 6230px;
+        left: 1010px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p48{
+        position: absolute;
+        top: 6300px;
+        left: 1010px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .orangebox{
+        height: 470px;
+        width: 1100px;
+        background-color: #e67700;
+        border-radius: 30px;
+        top: 6500px;
+        left: 120px;
+        position: absolute;
+    }
+    .img29{
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        top: 6500px;
+        right: 120px;
+        position: absolute;
+    }
+    .h13{
+        position: absolute;
+        top: 6500px;
+        left: 150px;
+        color: #000000;
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p49{
+        position: absolute;
+        top: 6580px;
+        left: 150px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    #Fullname{
+        position: absolute;
+        padding: 8px;
+        top: 6750px;
+        left: 200px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        border-radius: 5px;
+        border-color: white;
+    }
+    .label{
+        position: absolute;
+        padding: 8px;
+        top: 6700px;
+        left: 200px;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    #Emailaddress{
+        position: absolute;
+        top: 6750px;
+        left: 520px;
+        padding: 8px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        border-radius: 5px;
+        border-color: white;
+    }
+    .label1{
+        position: absolute;
+        left: 520px;
+        top: 6700px;
+        padding: 8px;
+        color: #000000;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #option{
+        position: absolute;
+        top: 6870px;
+        padding: 10px;
+        left: 200px;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        border-radius: 5px;
+        border-color: white;
+    }
+    .label2{
+        position: absolute;
+        top: 6820px;
+        left: 200px;
+        padding: 10px;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .signup{
+        position: absolute;
+        top: 6850px;
+        left: 520px;
+        color: white;
+        border-radius: 30px;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        border-color: white;
+    }
+    .logo{
+        position: absolute;
+        top: 7150px;
+        left: 130px;
+    }
+    .insta{
+        position: absolute;
+        top: 7240px;
+        left: 130px;
+    }
+    .facebook{
+        position: absolute;
+        top: 7240px;
+        left: 190px;
+    }
+    .twitter{
+        position: absolute;
+        top: 7240px;
+        left: 240px;
+    }
+    .p50{
+        position: absolute;
+        top: 7300px;
+        left: 130px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+    }
+    .Contact{
+        position: absolute;
+        top: 7150px;
+        left: 410px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    .p51{
+        position: absolute;
+        top: 7230px;
+        left: 410px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+    }
+    .p52{
+        position: absolute;
+        top: 7330px;
+        left: 410px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+    }
+    .Account{
+        position: absolute;
+        top: 7150px;
+        left: 650px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    .CAccount{
+        position: absolute;
+        top: 7220px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Signin{
+        position: absolute;
+        top: 7270px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .IOSapp{
+        position: absolute;
+        top: 7320px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color:#495057;
+        text-decoration: none;
+    }
+    .Androidapp{
+        position: absolute;
+        top: 7370px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Company{
+        position: absolute;
+        text-decoration: none;
+        top: 7150px;
+        left: 850px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+    .Aboutomnifood{
+        position: absolute;
+        top: 7220px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Forbusiness{
+        position: absolute;
+        top: 7270px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Cookingpartners{
+        position: absolute;
+        top: 7320px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Careers{
+        position: absolute;
+        top: 7370px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Resources{
+        position: absolute;
+        top: 7150px;
+        text-decoration: none;
+        left: 1050px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+    .Recipedirectory{
+        position: absolute;
+        top: 7220px;
+        left: 1050px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Helpcenter{
+        position: absolute;
+        top: 7270px;
+        left: 1050px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Privacyterms{
+        position: absolute;
+        top: 7320px;
+        left: 1050px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <table class="body">
+        <tr>
+            <td>
+                <img class="img" src="omnifood-logo.png" height="35px" width="250px" >
+            </td>
+            <td>
+                <ul>
+                    <li><a href="#" class="a">How it works</a></li>
+                    <li><a href="#" class="b">Meals</a></li>
+                    <li><a href="#" class="c">Testimonials</a></li>
+                    <li><a href="#" class="d">Pricing</a></li>
+                </ul>
+                <input type="button" value="Try for Free" class="e">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1 class="h1">A healthy meal<br> delivered to your door,<br> every single day</h1>
+            </td>
+            <td>
+                <img src="ofood1image.png" height="500px" width="550px" class="img1">
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                <p class="p">The smart 365-days-per-year food subscription that will<br> make you eat healthy again. Tailored to your personal tastes<br>and nutritional needs.                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="#"><button class="button1">Start Eating Well</button></a>
+                </div>
+            </td>   
+            <td> 
+                <div>
+                    <a href="#"><button class="whitebutton">Learn More &darr;</button></a>  
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="customer-1.jpg" height="70px" width="70px" class="img31">
+                <img src="customer-2.jpg" height="70px" width="70px" class="img32">
+                <img src="customer-3.jpg" height="70px" width="70px" class="img33">
+                <img src="customer-4.jpg" height="70px" width="70px" class="img34">
+                <img src="customer-5.jpg" height="70px" width="70px" class="img35">
+                <img src="customer-6.jpg" height="70px" width="70px" class="img36">
+                <p class="p1">2,50,000+</p>
+                <p class="p2"> Meals deliverd last year!</p>
+            </td>
+        </tr>
+    </table>
+    <table class="body1">
+        <tr>
+            <p class="p3">AS FEATURED IN</p>
+            <td>
+                <img src="techcrunch.png" class="img3" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="business-insider.png" class="img4" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="the-new-york-times.png" class="img5" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="forbes.png" class="img6" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="usa-today (1).png" class="img7" width="150px" height="30px">
+            </td>
+            <p class="p4">H0W IT WORKS</p>
+            <h1 class="h2">Your daily dose of health in 3 simple steps</h1>
+            <p class="p5">01</p>
+            <p class="p6">Tell us what you like (and what not)</p>
+            <td>
+                <img src="app-screen-1.png" height="430px" width="210px" class="img8">
+            </td>
+            <div>
+                <div class="dcle"></div>
+                <div class="lcle"></div>
+            </div>
+            <p class="p7">Never again waste time thinking about what to eat! Omnifood AI<br> will create a 100% personalized weekly meal plan just for you. It<br> makes sure you get all the nutrients and vitamins you need, no matter <br>what diet you follow!</p>
+            <p class="p8">02</p>
+            <p class="p9">Approve your weekly meal plan</p>
+                <div>
+                    <div class="lcicr"></div>
+                    <div class="dcicr"></div>
+                </div>
+                <td>
+                    <img src="app-screen-2 (1).png" height="430px" width="210px" class="img9">
+                </td>
+            <td>
+                <p class="p10">Once per week, approve the meal plan generated for you by <br>Omnifood AI. You can change ingredients, swap entire meals, or <br>even add your own recipes.</p>   
+            </td>
+            <td>
+                <p class="p11">03</p>
+                <p class="p12">Receive meals at convenient time</p>
+                <div>
+                    <div class="lcle"></div>
+                    <div class="dcle"></div>
+                </div>
+                <img src="app-screen-3.png" height="430px" width="210px" class="img10">
+                <p class="p13">Best chefs in town will cook your selected meal every day, and<br> we will deliver it to your door whenever works best for you. You<br> can change delivery schedule and address daily!</p>
+            </td>
+            <p class="h3">MEALS</p>
+            <h2 class="h4">Omnifood AI chooses from 5,000+ recipes</h2>
+        </tr>
+        <td>
+            <div class="whitebox"></div>
+            <div class="whitebox1"></div>
+            <img src="meal-1.jpg" class="img11" height="200px" width="330px">
+            <img src="meal-2.jpg" class="img12" height="200px" width="330px">
+            <input type="button" value="VEGETARIAN" style="background-color: #82c91e" class="vegbtn"> 
+            <div class="tick">
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+            </div>
+            <p class="p14">Japanese Gyozas</p>
+            <div class="fork">
+                <h3>  &#128293</h3>
+            </div>
+            <p class="p16"><b>650</b> calories</p>
+            <div class="fire">
+                <h3> &#x1F374 </h3>
+            </div>
+            <p class="p17">NutriScore ® <b>74</b></p>
+            <div class="star">
+                <h3> &#11088 </h3>
+            </div>
+            <p class="p18"><b>4.9</b>rating (537)</p>
+            <input type="button" value="VEGAN" style="background-color: #82c91e" class="vegbtn1"> 
+            <input type="button" value="PALEO" style="background-color: #fcc419" class="vegbtn2">
+            <div class="fork1">
+                <h3> &#128293</h3>
+            </div>
+            <p class="p19"><b>400</b> calories</p>
+            <div class="fire1">
+                <h3> &#x1F374 </h3>
+            </div>
+            <p class="p20">NutriScore ® <b>92</b></p>
+            <div class="star1">
+                <h3> &#11088 </h3>
+            </div>
+            <p class="p21"><b>4.8</b>rating (441)</p>
+            <p class="p15">Avocado Salad</p>
+            <h4 class="h5">Works with any diet:</h4>
+            <h6 class="h6"> Vegetarian</h6>
+            <h6 class="h61">Vegan</h6>
+            <h6 class="h62">Pescatarian</h6>
+            <h6 class="h63">Gluten Free</h6>
+            <h6 class="h64">Lactose Free</h6>
+            <h6 class="h65">Keto</h6>
+            <h6 class="h66">Paleo</h6>
+            <h6 class="h67">Low FODMAP</h6>
+            <h6 class="h68">Kid-friendly</h6>
+            <a href="#" class="p22">See all recipes &rarr;</a>
+        </td>
+    </table>
+    <table class="body2">
+        <tr>
+            <td>
+                <p class="p23">TESTIMONIALS</p>
+                <h2 class="h7">Once you try it,you can't <br> go back</h2>         
+            </td>
+            <td>
+                <img src="pinkclrimg1.jpg" height="70px" width="70px" class="img13">
+                <p class="p24">Inexpensive, healthy and<br><br>great-tasting meals,<br><br>without even having to<br><br>order manually! It feels truly<br><br>magical.
+                <br><br>— Dave Bryson</p>
+                <img src="gallery-1.jpg" height="180px" width="180px" class="img17">    
+                <img src="gallery-2.jpg" height="180px" width="180px" class="img18">    
+                <img src="gallery-3.jpg" height="180px" width="180px" class="img19">    
+                <img src="pinkclrimg2.jpg" height="70px" width="70px" class="img14">
+                <p class="p25">The AI algorithm is crazy<br><br>good, it chooses the right<br><br>meals for me every time. It's<br><br>amazing not to worry about <br><br>food anymore!
+                <br><br>— Ben Hadley</p>
+                <img src="gallery-4.jpg" height="180px" width="180px" class="img20">    
+                <img src="gallery-5.jpg" height="180px" width="180px" class="img21">    
+                <img src="gallery-6.jpg" height="180px" width="180px" class="img22">    
+                <img src="pinkclrimg3.jpg" height="70px" width="70px" class="img15">
+                <p class="p26">Omnifood is a life saver! I<br><br>just started a company, so <br><br>there's no time for cooking.<br><br>I couldn't live without my<br><br>daily meals now!
+                <br><br>— Steve Miller</p>
+                <img src="gallery-7.jpg" height="180px" width="180px" class="img23">    
+                <img src="gallery-8.jpg" height="180px" width="180px" class="img24">    
+                <img src="gallery-9.jpg" height="180px" width="180px" class="img25">    
+                <img src="pinkclrimg4.jpg" height="70px" width="70px" class="img16">
+                <p class="p27">I got Omnifood for the<br><br>whole family, and it frees up<br><br>so much time! Plus,<br><br>everything is organic and <br><br>vegan and without plastic.
+                <br><br>— Hannah Smith</p>
+                <img src="gallery-10.jpg" height="180px" width="180px" class="img26">    
+                <img src="gallery-11.jpg" height="180px" width="180px" class="img27">    
+                <img src="gallery-12.jpg" height="180px" width="180px" class="img28">  
+            </td>
+        </tr>
+    </table>
+    <table class="body3">
+        <tr>
+            <td>
+                <p class="p28">PRICING</p>
+                <h2 class="h8">Eating well without breaking the bank</h2>
+            </td>
+            <td>
+                <div class="whitebox3"></div>
+                <p class="p29">STARTER</p>
+                <p class="p31">$</p>
+                <p class="p33">399</p>
+                <p class="p35">per month. That's just $13 per meal!</p>
+                <div class="tick1">
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>  
+                </div>
+                <p class="p37">Meal per day</p>
+                <p class="p38">Order from 11am to 9pm</p>
+                <p class="p39">Delivery is free</p>
+                <input type="button" value="Start eating well" style="background-color: #e67700;" class="sew">
+                <div class="pinkbox"></div>
+                <p class="p30">COMPLETE</p>
+                <p class="p32">$</p>
+                <p class="p34">649</p>
+                <p class="p36">per month. That's just $11 per meal!</p>
+                <div class="tick2">
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>    
+                </div>
+                <p class="p40"><b>2 </b> Meal per day</p>
+                <p class="p41">Order <b> 24/7</b></p>
+                <p class="p42">Delivery is free</p> 
+                <p class="p43">Get access to latest recipes</p>
+                <input type="button" value="Start eating well" style="background-color: #e67700;" class="sew1">
+                <p class="p44">Prices include all applicable taxes. You can cancel at any time. Both plans include the following:
+                </p>
+                <div class="circle"></div>
+                <div class="infin">
+                    <h1> &#8734 </h1>
+                </div>
+                <h2 class="h9">Never cook again!</h2>
+                <p class="p45">Our subscriptions cover 365<br><br>days per year, even<br><br>including major holidays.</p>
+                <div class="circle1"></div>
+                <div class="apple">
+                    <h1> &#127822 </h1>
+                </div>
+                <h2 class="h10">Local and organic</h2>
+                <p class="p46">Our cooks only use local,<br><br>fresh, and organic products <br><br>to prepare your meals.</p>
+                <div class="circle2"></div>
+                <div class="leaf">
+                    <h1> &#x1F342 </h1>
+                </div>
+                <h2 class="h11">No waste</h2>
+                <p class="p47">All our partners only use <br><br>reusable containers to <br><br>package all your meals.</p>
+                <div class="circle3"></div>
+                <div class="parallel">
+                    <h1> ⏸︎ </h1>
+                </div>
+                <h2 class="h12">Pause anytime</h2>
+                <p class="p48">Going on vacation? Just<br><br>pause your subscription,<br><br>and we refund unused days.</p>
+                <div class="orangebox"></div>
+                <img src="foodiegirl.jpeg" height="470px" width="350px" class="img29">
+                <h1 class="h13">Get your first meal for free!</h1>
+                <p class="p49">Healthy, tasty and hassle-free meals are waiting for you. Start eating well<br> today. You can cancel or pause anytime. And the first meal is on us!</p>
+                <form action="/action_page.php">
+                    <div class="container">
+                      <label class="label"><b>Full Name</b></label>
+                      <input type="text" placeholder="John Smith" name="Full Name" id="Fullname" required>
+                      <label class="label1"><b>Email Address</b></label>
+                      <input type="email" placeholder="me@example,com" name= "EmailAddress" id="Emailaddress" required>
+                      <label class="label2"><b>Where did you hear from us?</b></label>
+                      <select placeholder="Pleasee Choose one option" id="option" required>
+                        <option value="Pleasee Choose one option">Pleasee Choose one option</option>
+                        <option value="Friends and Family">Friends and Family</option>
+                        <option value="You tube video">You tube Video</option>
+                        <option value="Podcast">Podcast</option>
+                        <option value="Facebook ad">Facebook ad</option>
+                        <option value="Others">Others</option>
+                      </select>
+                      <input type="button" value="Signup Now" style="background-color: #e67700;" class="signup">
+                    </div>
+                </form>
+                <a href="#"><img src="omnifood-logo.png" height="30px" width="200px" class="logo"></a>
+                <a href="#"><img src="insta1.webp" class="insta" height="30px" width="30px"></a>
+                <a href="#"><img src="facebook1.jpg" class="facebook" height="30px" width="30px"></a>
+                <a href="#"><img src="twitter.png" class="twitter" height="30px" width="30px"></a>
+                <p class="p50">Copyright © 2023 by Omnifood,<br><br>Inc. All rights reserved.</p>
+                <a href="#" class="Contact">Contact us</a>
+                <a href="#"><p class="p51">623 Harrison St., 2nd Floor,<br> San Francisco, CA 94107</p></a>
+                <a href="#"><p class="p52">415-201-6370<br>hello@omnifood.com</p></a>
+                <a href="#" class="Account">Acccount</a>
+                <a href="#" class="CAccount">Create account</a>
+                <a href="#" class="Signin">Sign in</a>
+                <a href="#" class="IOSapp">IOS app</a>
+                <a href="#" class="Androidapp">Android app</a>
+                <a href="#" class="Company">Company</a>
+                <a href="#" class="Aboutomnifood">About Omnifood</a>
+                <a href="#" class="Forbusiness">For Business</a>
+                <a href="#" class="Cookingpartners">Cooking partners</a>
+                <a href="#" class="Careers">Careers</a>
+                <a href="#" class="Resources">Resources</a>
+                <a href="#" class="Recipedirectory">Recipe directory</a>
+                <a href="#" class="Helpcenter">Help center</a>
+                <a href="#" class="Privacyterms">Privacy & terms</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        background-color: #ffe3e3;
+        border-radius: 15px;
+        height: 850px;
+        width: 1325px;
+    }
+    .img{
+        position: absolute;
+        top: 40px;
+        left: 100px;
+    }
+    .img:hover{
+        border: 5px solid orangered;
+        height: 35px;
+        width: 240px;
+    }
+    .menu {
+        align-items: center;
+        gap: 25px;
+        display: flex;
+        padding: 0 35px;
+    }
+    .h1{
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 170px;
+        left: 100px;
+        position: absolute;
+        font-weight: bold;
+    }
+    .img1{
+        position: absolute;
+        top: 200px;
+        left: 700px;
+    }
+    ul li{
+        list-style: none;
+    }
+    .p{
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #868e96;
+        position: absolute;
+        top: 440px;
+        left: 100px;
+    }
+    .a{
+        position: absolute;
+        top: 40px;
+        right: 660px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        font-style: Arial, Helvetica, sans-serif;
+    }
+    .a:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 120px;
+    }
+    .b{
+        position: absolute;
+        top: 40px;
+        right: 550px;
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: Arial, Helvetica, sans-serif;
+        color: black;
+
+    }
+    .b:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 60px;
+    }
+    .c{
+        position: absolute;
+        top: 40px;
+        right: 390px;
+        font-weight: bold;
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        font-style: Arial, Helvetica, sans-serif;
+        color: black;
+    
+    }
+    .c:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 110px;
+    }
+    .d{
+        position: absolute;
+        top: 40px;
+        right: 280px;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+    .d:hover{
+        color: #e67700;
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 70px;
+    }
+    .e{
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        border: none;
+        border-radius: 4px;
+        padding: 12px;
+        font-weight: bold;
+        font-size: 15px;
+        font-style: Arial, Helvetica, sans-serif;
+        background-color: #e67700;
+       }
+    .e:hover{
+        border: 5px solid #e67700;
+        height: 60px;
+        width: 140px;
+    }
+    .whitebutton{
+        border: none;
+        border-radius: 17px;
+        position: absolute;
+        top: 620px;
+        left: 340px;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        font-size: 16px;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+        display: inline-block;
+    }
+    .button1{
+        border: none;
+        border-radius: 17px;
+        position: absolute;
+        top: 620px;
+        left: 100px;
+        background-color: #e67700;
+        color: black;
+        padding: 15px;
+        font-size: 16px;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+        display: inline-block;
+    }
+    .button1:hover{
+        background-color: lightsalmon;
+    }
+    .img2{
+        position: absolute;
+        top: 630px;
+        left: 130px;
+    }
+    .p1{
+        position: absolute; 
+        top: 750px;
+        left: 320px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #e67700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p2{
+        position: absolute;
+        top: 750px;
+        left: 420px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    .img31{
+        position: absolute;
+        top: 750px;
+        left: 60px;
+        border-radius: 200%;
+    }
+    .img32{
+        position: absolute;
+        top: 750px;
+        left: 90px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .img33{
+        position: absolute;
+        top: 750px;
+        left: 120px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    } 
+    .img34{
+        position: absolute;
+        top: 750px;
+        left: 150px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .img35{
+        position: absolute;
+        top: 750px;
+        left: 180px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .img36{
+        position: absolute;
+        top: 750px;
+        left: 210px;
+        border-radius: 200%;
+        border-color: #fff9db;
+    }
+    .body1{
+        background-color: #f8f9fa;
+        height:3200px;
+        width: 1325px;
+    }
+    .p3{
+        position: absolute;
+        color: #868e96;
+        top: 895px;
+        left: 600px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img3{
+        position: absolute;
+        top: 1000px;
+        left: 90px;
+        font: #868e96;
+    }
+    .img4{
+        position: absolute;
+        top: 1000px;
+        left: 350px;
+        font: #868e96;
+    }
+    .img5{
+        position: absolute;
+        top: 1000px;
+        left: 600px;
+        font: #868e96;
+    }
+    .img6{
+        position: absolute;
+        top: 1000px;
+        right: 300px;
+        font: #868e96;
+    }
+    .img7{
+        position: absolute;
+        top: 1000px;
+        right: 50px;
+        color: #868e96;
+    }
+    .p4{
+        position: absolute;
+        top: 1100px;
+        left: 40px;
+        color: #d9480f;
+        font-size: 19px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h2{
+        position: absolute;
+        top: 1150px;
+        left: 55px;
+        color: black;
+        font-size: 43px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p5{
+        position: absolute;
+        top: 1300px;
+        left: 55px;
+        color: #dee2e6;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p6{
+        position: absolute;
+        top: 1520px;
+        left: 55px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .img8{
+        position: absolute;
+        top: 1400px;
+        right: 250px;
+    }
+    .dcle{
+        position: absolute;
+        top: 1410px;
+        right: 150px;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: #fff5f5;
+    }
+    .lcle{
+        position: absolute;
+        top: 1460px;
+        right: 200px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #ffdeeb;
+    }
+    .p7{
+        position: absolute;
+        top: 1590px;
+        left: 55px;
+        color: #495057;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .img9{
+        position: absolute;
+        top: 1980px;
+        left: 250px;
+    }
+    .lcicr{
+        position: absolute;
+        border-radius: 50%;
+        left: 150px;
+        top: 2000px;
+        background-color: #fff5f5;
+        height: 400px;
+        width: 400px;
+    }
+    .dcicr{
+        position: absolute;
+        top: 2050px;
+        right: 840px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #ffdeeb;
+    }
+    .p8{
+        position: absolute;
+        top: 1930px;
+        right: 600px;
+        color: #dee2e6;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p9{
+        position: absolute;
+        top: 2130px;
+        left: 630px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p10{
+        position: absolute;
+        top: 2200px;
+        left: 630px;
+        color: #495057;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .p11{
+        position: absolute;
+        top: 2550px;
+        left: 55px;
+        color: #dee2e6;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p12{
+        position: absolute;
+        top: 2750px;
+        left: 55px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .lcle{
+        position: absolute;
+        border-radius: 50%;
+        right: 150px;
+        top: 2630px;
+        background-color: #fff5f5;
+        height: 400px;
+        width: 400px;
+    }
+    .dcle{
+        position: absolute;
+        top: 2680px;
+        right: 200px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #ffdeeb;
+    }
+    .img10{
+        position: absolute;
+        top: 2600px;
+        right: 250px;
+    }
+    .p13{
+        position: absolute;
+        top: 2820px;
+        left: 55px;
+        color: #495057;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .h3{
+        position: absolute; 
+        top: 3100px;
+        left: 650px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #f03e3e;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h4{ 
+        position: absolute; 
+        top: 3150px;
+        left: 300px;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+    .whitebox{
+        position: absolute;
+        top: 3330px;
+        left: 100px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 500px;
+        width: 330px;
+    }
+    .whitebox:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .whitebox1{
+        position: absolute;
+        top: 3330px;
+        left: 500px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 500px;
+        width: 330px;
+    }
+    .whitebox1:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .img11{
+        position: absolute;
+        top: 3330px;
+        left: 100px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .img11:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .img12{
+        position: absolute;
+        top: 3330px;
+        left: 500px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }    
+    .img12:hover { 
+         animation: Shake 0.5s linear infinite; 
+     } 
+     @keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+    .vegbtn{
+        position: absolute;
+        top: 3570px;
+        left: 150px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+    }
+    .tick{
+        position: absolute;
+        top: 3370px;
+        right: 400px;
+        color: #e67700;
+    }
+    .vegbtn1{
+        position: absolute;
+        top: 3570px;
+        left: 550px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+    }
+    .vegbtn2{
+        position: absolute;
+        top: 3570px;
+        left: 640px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        border: none;
+        border-radius: 6px;
+    }
+    .p14{
+        position: absolute;
+        top: 3590px;
+        left: 130px;
+        color: black;
+        font-size: 27px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p15{
+        position: absolute;
+        top: 3590px;
+        left: 530px;
+        color: black;
+        font-size: 27px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fork{
+        position: absolute;
+        top: 3650px;
+        left: 150px;
+        color: #d9480f;
+    }
+    .p16{
+        position: absolute;
+        top: 3660px;
+        left: 190px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fire{
+        position: absolute;
+        top: 3700px;
+        left: 150px;
+        color: #d9480f;
+    }
+    .p17{
+        position: absolute;
+        top: 3710px;
+        left: 190px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .star{
+        position: absolute;
+        top: 3750px;
+        left: 150px;
+        color: #d9480f;
+    }
+    .p18{
+        position: absolute;
+        top: 3760px;
+        left: 190px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fork1{
+        position: absolute;
+        top: 3650px;
+        left: 540px;
+        color: #d9480f;
+    }
+    .p19{
+        position: absolute;
+        top: 3660px;
+        left: 580px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fire1{
+        position: absolute;
+        top: 3700px;
+        left: 540px;
+        color: #d9480f;
+    }
+    .p20{
+        position: absolute;
+        top: 3710px;
+        left: 580px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .star1{
+        position: absolute;
+        top: 3750px;
+        left: 540px;
+        color: #d9480f;
+    }
+    
+    .p21{
+        position: absolute;
+        top: 3760px;
+        left: 580px;
+        color: #495057;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h5{
+        position: absolute;
+        top: 3290px;
+        right: 180px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h6{
+        position: absolute;
+        top: 3340px;
+        right: 270px;
+        color: #495057;
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h61{
+        position: absolute;
+        top: 3390px;
+        right: 310.5px;
+        color: #495057;
+        font-weight: lighter;
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h62{
+        position: absolute;
+        top: 3445px;
+        right: 250px;
+        color:#495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h63{
+        position: absolute;
+        top: 3495px;
+        right: 250px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h64{
+        position: absolute;
+        top: 3545px;
+        right: 235px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h65{
+        position: absolute;
+        top: 3595px;
+        right: 320px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h66{
+        position: absolute;
+        top: 3650px;
+        right: 310px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h67{
+        position: absolute;
+        top: 3705px;
+        right: 220px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h68{
+        position: absolute;
+        top: 3752px;
+        right: 250px;
+        color: #495057;
+        font-size: 23px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p22{
+        position: absolute;
+        top: 3940px;
+        right: 600px;
+        color: #e67700;
+        font-size: 17px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .p22.hover{
+        border: 5px solid #e67700;
+        height: 25px;
+        width: 100px;
+    }
+    .body2{
+        background-color: #ffe3e3;
+        border-radius: 15px;
+        height: 1050px;
+        width: 1325px;
+    }
+    .p23{
+        position: absolute;
+        top: 4170px;
+        left: 120px;
+        color: #e67700;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    .h7{
+        position: absolute;
+        top: 4200px;
+        left: 120px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 44px;
+    }
+    .img13{
+        position: absolute;
+        top: 4400px;
+        left: 120px;
+        border-radius: 80%;
+    }
+    .p24{
+        position: absolute;
+        top: 4490px;
+        left: 120px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img14{
+        position: absolute;
+        top: 4400px;
+        left: 420px;
+        border-radius: 80%;
+    }
+    .p25{
+        position: absolute;
+        top: 4490px;
+        left: 420px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img15{
+        position: absolute;
+        top: 4740px;
+        left: 120px;
+        border-radius: 80%;
+    }
+    .p26{
+        position: absolute;
+        top: 4840px;
+        left: 120px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img16{
+        position: absolute;
+        top: 4740px;
+        left: 420px;
+        border-radius: 80%;
+    }
+    .p27{
+        position: absolute;
+        top: 4840px;
+        left: 420px;
+        color: #495057;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .img17{
+        position: absolute;
+        top: 4250px;
+        left: 720px;
+    }
+    .img18{
+        position: absolute;
+        top: 4250px;
+        left: 910px;
+    }
+    .img19{
+        position: absolute;
+        top: 4250px;
+        left: 1100px;
+    }
+    .img20{
+        position: absolute;
+        top: 4445px;
+        left: 720px;
+    }
+    .img21{
+        position: absolute;
+        top: 4445px;
+        left: 910px;
+    }
+    .img22{
+        position: absolute;
+        top: 4445px;
+        left: 1100px;
+    }
+    .img23{
+        position: absolute;
+        top: 4640px;
+        left: 720px;
+    }
+    .img24{
+        position: absolute;
+        top: 4640px;
+        left: 910px;
+    }
+    .img25{
+        position: absolute;
+        top: 4640px;
+        left: 1100px;
+    }
+    .img26{
+        position: absolute;
+        top: 4840px;
+        left: 720px;
+    }
+    .img27{
+        position: absolute;
+        top: 4840px;
+        left: 910px;
+    }
+    .img28{
+        position: absolute;
+        top: 4840px;
+        left: 1100px;
+    }
+    .body3{
+        background-color: #f1f3f5;
+        height: 2500px;
+        width: 1325px;
+    }
+    .p28{
+        position: absolute;
+        top: 5210px;
+        left: 120px;
+        color: #d9480f;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }   
+    .h8{
+        position: absolute;
+        top: 5240px;
+        left: 120px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 43px;
+    }   
+    .whitebox3{
+        position: absolute;
+        top: 5400px;
+        left: 250px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 600px;
+        width: 400px;
+    }
+    .pinkbox{
+        position: absolute;
+        top: 5400px;
+        left: 700px;
+        background-color: #ffdeeb;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 600px;
+        width: 400px;
+    }
+    .p29{
+        position: absolute;
+        top: 5450px;
+        left: 410px;
+        color: #e67700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }   
+    .p30{
+        position: absolute;
+        top: 5450px;
+        right: 400px;
+        color: #e67700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }   
+    .p31{
+        position: absolute;
+        top: 5500px;
+        left: 385px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+    }   
+    .p32{
+        position: absolute;
+        top: 5500px;
+        right: 505px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+    }   
+    .p33{
+        position: absolute;
+        top: 5430px;
+        left: 405px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+    }   
+    .p34{
+        position: absolute;
+        top: 5430px;
+        right: 395px;
+        color: black;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+    } 
+    .tick1{
+        position: absolute;
+        top: 5655px;
+        left: 350px;
+        color: #e67700;
+    }
+    .p35{
+        position: absolute;
+        top: 5600px;
+        left: 330px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+    }  
+    .tick2{
+        position: absolute;
+        top: 5655px;
+        right: 550px;
+        color: #e67700;
+    } 
+    .p36{
+        position: absolute;
+        top: 5600px;
+        right: 320px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+    }     
+    .p37{
+        position: absolute;
+        top: 5660px;
+        left: 395px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p38{
+        position: absolute;
+        top: 5715px;
+        left: 395px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p39{
+        position: absolute;
+        top: 5770px;
+        left: 395px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p40{
+        position: absolute;
+        top: 5660px;
+        right: 380px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p41{
+        position: absolute;
+        top: 5710px;
+        right: 420px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }     
+    .p42{
+        position: absolute;
+        top: 5765px;
+        right: 380px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    .p43{
+        position: absolute;
+        top: 5815px;
+        right: 265px;
+        color: #868e96;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+    }    
+    .sew{
+        position: absolute;
+        top: 5900px;
+        left: 350px;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        border-radius: 10px;
+    }
+    .sew1{
+        position: absolute;
+        top: 5900px;
+        right: 340px;
+        color: white;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    }     
+    .p44{
+        position: absolute;
+        top: 6050px;
+        left: 350px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #495057;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .circle{
+        position: absolute;
+        top: 6150px;
+        left: 120px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .infin{
+        position: absolute;
+        top: 6142px;
+        left: 140px;
+        color: #d9480f;
+    }
+    .h9{
+        position: absolute;
+        top: 6230px;
+        left: 110px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p45{
+        position: absolute;
+        top: 6300px;
+        left: 110px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .circle1{
+        position: absolute;
+        top: 6150px;
+        left: 455px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .apple{
+        position: absolute;
+        top: 6142px;
+        left: 470px;
+        color: #d9480f;
+    }
+    .h10{
+        position: absolute;
+        top: 6230px;
+        left: 445px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p46{
+        position: absolute;
+        top: 6300px;
+        left: 445px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .circle2{
+        position: absolute;
+        top: 6150px;
+        left: 770px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .leaf{
+        position: absolute;
+        top: 6142px;
+        left: 780px;
+        color: #d9480f;
+    }
+    .h11{
+        position: absolute;
+        top: 6230px;
+        left: 760px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p47{
+        position: absolute;
+        top: 6300px;
+        left: 760px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .circle3{
+        position: absolute;
+        top: 6150px;
+        left: 1020px;
+        border-radius: 180%;
+        background-color: #fff9db;
+        height: 70px;
+        width: 70px;
+    }
+    .parallel{
+        position: absolute;
+        top: 6142px;
+        left: 1030px;
+        color: #d9480f;
+    }
+    .h12{
+        position: absolute;
+        top: 6230px;
+        left: 1010px;
+        color: #000000;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p48{
+        position: absolute;
+        top: 6300px;
+        left: 1010px;
+        color: black;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .orangebox{
+        height: 470px;
+        width: 1100px;
+        background-color: #e67700;
+        border-radius: 30px;
+        top: 6500px;
+        left: 120px;
+        position: absolute;
+    }
+    .img29{
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        top: 6500px;
+        right: 120px;
+        position: absolute;
+    }
+    .h13{
+        position: absolute;
+        top: 6500px;
+        left: 150px;
+        color: #000000;
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .p49{
+        position: absolute;
+        top: 6580px;
+        left: 150px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    #Fullname{
+        position: absolute;
+        padding: 8px;
+        top: 6750px;
+        left: 200px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        border-radius: 5px;
+        border-color: white;
+    }
+    .label{
+        position: absolute;
+        padding: 8px;
+        top: 6700px;
+        left: 200px;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    #Emailaddress{
+        position: absolute;
+        top: 6750px;
+        left: 520px;
+        padding: 8px;
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        border-radius: 5px;
+        border-color: white;
+    }
+    .label1{
+        position: absolute;
+        left: 520px;
+        top: 6700px;
+        padding: 8px;
+        color: #000000;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #option{
+        position: absolute;
+        top: 6870px;
+        padding: 10px;
+        left: 200px;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        border-radius: 5px;
+        border-color: white;
+    }
+    .label2{
+        position: absolute;
+        top: 6820px;
+        left: 200px;
+        padding: 10px;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+    }
+    .signup{
+        border: none;
+        outline: 0;
+        position: absolute;
+        display: inline-block;
+        top: 6870px;
+        left: 520px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        width: 18%;
+        border-radius: 5px;
+        padding: 8px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        border-color: white;
+    }
+    .signup:hover{
+        background-color: #555;
+    }
+    .logo{
+        position: absolute;
+        top: 7150px;
+        left: 130px;
+    }
+    .insta{
+        position: absolute;
+        top: 7240px;
+        left: 130px;
+    }
+    .facebook{
+        position: absolute;
+        top: 7240px;
+        left: 190px;
+    }
+    .twitter{
+        position: absolute;
+        top: 7240px;
+        left: 240px;
+    }
+    .p50{
+        position: absolute;
+        top: 7300px;
+        left: 130px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+    }
+    .Contact{
+        position: absolute;
+        top: 7150px;
+        left: 410px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    .p51{
+        position: absolute;
+        top: 7230px;
+        left: 410px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+    }
+    .p52{
+        position: absolute;
+        top: 7330px;
+        left: 410px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+    }
+    .Account{
+        position: absolute;
+        top: 7150px;
+        left: 650px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    .CAccount{
+        position: absolute;
+        top: 7220px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Signin{
+        position: absolute;
+        top: 7270px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .IOSapp{
+        position: absolute;
+        top: 7320px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color:#495057;
+        text-decoration: none;
+    }
+    .Androidapp{
+        position: absolute;
+        top: 7370px;
+        left: 650px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Company{
+        position: absolute;
+        text-decoration: none;
+        top: 7150px;
+        left: 850px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+    .Aboutomnifood{
+        position: absolute;
+        top: 7220px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Forbusiness{
+        position: absolute;
+        top: 7270px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Cookingpartners{
+        position: absolute;
+        top: 7320px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Careers{
+        position: absolute;
+        top: 7370px;
+        left: 850px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Resources{
+        position: absolute;
+        top: 7150px;
+        text-decoration: none;
+        left: 1050px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+    .Recipedirectory{
+        position: absolute;
+        top: 7220px;
+        left: 1050px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Helpcenter{
+        position: absolute;
+        top: 7270px;
+        left: 1050px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+    .Privacyterms{
+        position: absolute;
+        top: 7320px;
+        left: 1050px;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        color: #495057;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <table class="body">
+        <tr>
+            <td>
+                <img class="img" src="omnifood-logo.png" height="35px" width="250px" >
+            </td>
+            <td>
+                <ul>
+                    <li><a href="#" class="a">How it works</a></li>
+                    <li><a href="#" class="b">Meals</a></li>
+                    <li><a href="#" class="c">Testimonials</a></li>
+                    <li><a href="#" class="d">Pricing</a></li>
+                </ul>
+                <input type="button" value="Try for Free" class="e">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1 class="h1">A healthy meal<br> delivered to your door,<br> every single day</h1>
+            </td>
+            <td>
+                <img src="ofood1image.png" height="500px" width="550px" class="img1">
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                <p class="p">The smart 365-days-per-year food subscription that will<br> make you eat healthy again. Tailored to your personal tastes<br>and nutritional needs.                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="#"><button class="button1">Start Eating Well</button></a>
+                </div>
+            </td>   
+            <td> 
+                <div>
+                    <a href="#"><button class="whitebutton">Learn More &darr;</button></a>  
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="customer-1.jpg" height="70px" width="70px" class="img31">
+                <img src="customer-2.jpg" height="70px" width="70px" class="img32">
+                <img src="customer-3.jpg" height="70px" width="70px" class="img33">
+                <img src="customer-4.jpg" height="70px" width="70px" class="img34">
+                <img src="customer-5.jpg" height="70px" width="70px" class="img35">
+                <img src="customer-6.jpg" height="70px" width="70px" class="img36">
+                <p class="p1">2,50,000+</p>
+                <p class="p2"> Meals deliverd last year!</p>
+            </td>
+        </tr>
+    </table>
+    <table class="body1">
+        <tr>
+            <p class="p3">AS FEATURED IN</p>
+            <td>
+                <img src="techcrunch.png" class="img3" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="business-insider.png" class="img4" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="the-new-york-times.png" class="img5" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="forbes.png" class="img6" width="150px" height="30px">
+            </td>
+            <td>
+                <img src="usa-today (1).png" class="img7" width="150px" height="30px">
+            </td>
+            <p class="p4">H0W IT WORKS</p>
+            <h1 class="h2">Your daily dose of health in 3 simple steps</h1>
+            <p class="p5">01</p>
+            <p class="p6">Tell us what you like (and what not)</p>
+            <td>
+                <img src="app-screen-1.png" height="430px" width="210px" class="img8">
+            </td>
+            <div>
+                <div class="dcle"></div>
+                <div class="lcle"></div>
+            </div>
+            <p class="p7">Never again waste time thinking about what to eat! Omnifood AI<br> will create a 100% personalized weekly meal plan just for you. It<br> makes sure you get all the nutrients and vitamins you need, no matter <br>what diet you follow!</p>
+            <p class="p8">02</p>
+            <p class="p9">Approve your weekly meal plan</p>
+                <div>
+                    <div class="lcicr"></div>
+                    <div class="dcicr"></div>
+                </div>
+                <td>
+                    <img src="app-screen-2 (1).png" height="430px" width="210px" class="img9">
+                </td>
+            <td>
+                <p class="p10">Once per week, approve the meal plan generated for you by <br>Omnifood AI. You can change ingredients, swap entire meals, or <br>even add your own recipes.</p>   
+            </td>
+            <td>
+                <p class="p11">03</p>
+                <p class="p12">Receive meals at convenient time</p>
+                <div>
+                    <div class="lcle"></div>
+                    <div class="dcle"></div>
+                </div>
+                <img src="app-screen-3.png" height="430px" width="210px" class="img10">
+                <p class="p13">Best chefs in town will cook your selected meal every day, and<br> we will deliver it to your door whenever works best for you. You<br> can change delivery schedule and address daily!</p>
+            </td>
+            <p class="h3">MEALS</p>
+            <h2 class="h4">Omnifood AI chooses from 5,000+ recipes</h2>
+        </tr>
+        <td>
+            <div class="whitebox"></div>
+            <div class="whitebox1"></div>
+            <img src="meal-1.jpg" class="img11" height="200px" width="330px">
+            <img src="meal-2.jpg" class="img12" height="200px" width="330px">
+            <input type="button" value="VEGETARIAN" style="background-color: #82c91e" class="vegbtn"> 
+            <div class="tick">
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+                <h2> &#x2713 </h2>
+            </div>
+            <p class="p14">Japanese Gyozas</p>
+            <div class="fork">
+                <h3>  &#128293</h3>
+            </div>
+            <p class="p16"><b>650</b> calories</p>
+            <div class="fire">
+                <h3> &#x1F374 </h3>
+            </div>
+            <p class="p17">NutriScore ® <b>74</b></p>
+            <div class="star">
+                <h3> &#11088 </h3>
+            </div>
+            <p class="p18"><b>4.9</b>rating (537)</p>
+            <input type="button" value="VEGAN" style="background-color: #82c91e" class="vegbtn1"> 
+            <input type="button" value="PALEO" style="background-color: #fcc419" class="vegbtn2">
+            <div class="fork1">
+                <h3> &#128293</h3>
+            </div>
+            <p class="p19"><b>400</b> calories</p>
+            <div class="fire1">
+                <h3> &#x1F374 </h3>
+            </div>
+            <p class="p20">NutriScore ® <b>92</b></p>
+            <div class="star1">
+                <h3> &#11088 </h3>
+            </div>
+            <p class="p21"><b>4.8</b>rating (441)</p>
+            <p class="p15">Avocado Salad</p>
+            <h4 class="h5">Works with any diet:</h4>
+            <h6 class="h6"> Vegetarian</h6>
+            <h6 class="h61">Vegan</h6>
+            <h6 class="h62">Pescatarian</h6>
+            <h6 class="h63">Gluten Free</h6>
+            <h6 class="h64">Lactose Free</h6>
+            <h6 class="h65">Keto</h6>
+            <h6 class="h66">Paleo</h6>
+            <h6 class="h67">Low FODMAP</h6>
+            <h6 class="h68">Kid-friendly</h6>
+            <a href="#" class="p22">See all recipes &rarr;</a>
+        </td>
+    </table>
+    <table class="body2">
+        <tr>
+            <td>
+                <p class="p23">TESTIMONIALS</p>
+                <h2 class="h7">Once you try it,you can't <br> go back</h2>         
+            </td>
+            <td>
+                <img src="pinkclrimg1.jpg" height="70px" width="70px" class="img13">
+                <p class="p24">Inexpensive, healthy and<br><br>great-tasting meals,<br><br>without even having to<br><br>order manually! It feels truly<br><br>magical.
+                <br><br>— Dave Bryson</p>
+                <img src="gallery-1.jpg" height="180px" width="180px" class="img17">    
+                <img src="gallery-2.jpg" height="180px" width="180px" class="img18">    
+                <img src="gallery-3.jpg" height="180px" width="180px" class="img19">    
+                <img src="pinkclrimg2.jpg" height="70px" width="70px" class="img14">
+                <p class="p25">The AI algorithm is crazy<br><br>good, it chooses the right<br><br>meals for me every time. It's<br><br>amazing not to worry about <br><br>food anymore!
+                <br><br>— Ben Hadley</p>
+                <img src="gallery-4.jpg" height="180px" width="180px" class="img20">    
+                <img src="gallery-5.jpg" height="180px" width="180px" class="img21">    
+                <img src="gallery-6.jpg" height="180px" width="180px" class="img22">    
+                <img src="pinkclrimg3.jpg" height="70px" width="70px" class="img15">
+                <p class="p26">Omnifood is a life saver! I<br><br>just started a company, so <br><br>there's no time for cooking.<br><br>I couldn't live without my<br><br>daily meals now!
+                <br><br>— Steve Miller</p>
+                <img src="gallery-7.jpg" height="180px" width="180px" class="img23">    
+                <img src="gallery-8.jpg" height="180px" width="180px" class="img24">    
+                <img src="gallery-9.jpg" height="180px" width="180px" class="img25">    
+                <img src="pinkclrimg4.jpg" height="70px" width="70px" class="img16">
+                <p class="p27">I got Omnifood for the<br><br>whole family, and it frees up<br><br>so much time! Plus,<br><br>everything is organic and <br><br>vegan and without plastic.
+                <br><br>— Hannah Smith</p>
+                <img src="gallery-10.jpg" height="180px" width="180px" class="img26">    
+                <img src="gallery-11.jpg" height="180px" width="180px" class="img27">    
+                <img src="gallery-12.jpg" height="180px" width="180px" class="img28">  
+            </td>
+        </tr>
+    </table>
+    <table class="body3">
+        <tr>
+            <td>
+                <p class="p28">PRICING</p>
+                <h2 class="h8">Eating well without breaking the bank</h2>
+            </td>
+            <td>
+                <div class="whitebox3"></div>
+                <p class="p29">STARTER</p>
+                <p class="p31">$</p>
+                <p class="p33">399</p>
+                <p class="p35">per month. That's just $13 per meal!</p>
+                <div class="tick1">
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>  
+                </div>
+                <p class="p37">Meal per day</p>
+                <p class="p38">Order from 11am to 9pm</p>
+                <p class="p39">Delivery is free</p>
+                <input type="button" value="Start eating well" style="background-color: #e67700;" class="sew">
+                <div class="pinkbox"></div>
+                <p class="p30">COMPLETE</p>
+                <p class="p32">$</p>
+                <p class="p34">649</p>
+                <p class="p36">per month. That's just $11 per meal!</p>
+                <div class="tick2">
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>
+                    <h2> &#x2713 </h2>    
+                </div>
+                <p class="p40"><b>2 </b> Meal per day</p>
+                <p class="p41">Order <b> 24/7</b></p>
+                <p class="p42">Delivery is free</p> 
+                <p class="p43">Get access to latest recipes</p>
+                <input type="button" value="Start eating well" style="background-color: #e67700;" class="sew1">
+                <p class="p44">Prices include all applicable taxes. You can cancel at any time. Both plans include the following:
+                </p>
+                <div class="circle"></div>
+                <div class="infin">
+                    <h1> &#8734 </h1>
+                </div>
+                <h2 class="h9">Never cook again!</h2>
+                <p class="p45">Our subscriptions cover 365<br><br>days per year, even<br><br>including major holidays.</p>
+                <div class="circle1"></div>
+                <div class="apple">
+                    <h1> &#127822 </h1>
+                </div>
+                <h2 class="h10">Local and organic</h2>
+                <p class="p46">Our cooks only use local,<br><br>fresh, and organic products <br><br>to prepare your meals.</p>
+                <div class="circle2"></div>
+                <div class="leaf">
+                    <h1> &#x1F342 </h1>
+                </div>
+                <h2 class="h11">No waste</h2>
+                <p class="p47">All our partners only use <br><br>reusable containers to <br><br>package all your meals.</p>
+                <div class="circle3"></div>
+                <div class="parallel">
+                    <h1> ⏸︎ </h1>
+                </div>
+                <h2 class="h12">Pause anytime</h2>
+                <p class="p48">Going on vacation? Just<br><br>pause your subscription,<br><br>and we refund unused days.</p>
+                <div class="orangebox"></div>
+                <img src="foodiegirl.jpeg" height="470px" width="350px" class="img29">
+                <h1 class="h13">Get your first meal for free!</h1>
+                <p class="p49">Healthy, tasty and hassle-free meals are waiting for you. Start eating well<br> today. You can cancel or pause anytime. And the first meal is on us!</p>
+                <form action="/action_page.php">
+                    <div class="container">
+                      <label class="label"><b>Full Name</b></label>
+                      <input type="text" placeholder="John Smith" name="Full Name" id="Fullname" required>
+                      <label class="label1"><b>Email Address</b></label>
+                      <input type="email" placeholder="me@example,com" name= "EmailAddress" id="Emailaddress" required>
+                      <label class="label2"><b>Where did you hear from us?</b></label>
+                      <select placeholder="Pleasee Choose one option" id="option" required>
+                        <option value="Pleasee Choose one option">Pleasee Choose one option</option>
+                        <option value="Friends and Family">Friends and Family</option>
+                        <option value="You tube video">You tube Video</option>
+                        <option value="Podcast">Podcast</option>
+                        <option value="Facebook ad">Facebook ad</option>
+                        <option value="Others">Others</option>
+                      </select>
+                      <input type="button" value="Signup Now" style="background-color: #212529;" class="signup">
+                    </div>
+                </form>
+                <a href="#"><img src="omnifood-logo.png" height="30px" width="200px" class="logo"></a>
+                <a href="#"><img src="insta1.webp" class="insta" height="30px" width="30px"></a>
+                <a href="#"><img src="facebook1.jpg" class="facebook" height="30px" width="30px"></a>
+                <a href="#"><img src="twitter.png" class="twitter" height="30px" width="30px"></a>
+                <p class="p50">Copyright © 2023 by Omnifood,<br><br>Inc. All rights reserved.</p>
+                <a href="#" class="Contact">Contact us</a>
+                <a href="#"><p class="p51">623 Harrison St., 2nd Floor,<br> San Francisco, CA 94107</p></a>
+                <a href="#"><p class="p52">415-201-6370<br>hello@omnifood.com</p></a>
+                <a href="#" class="Account">Acccount</a>
+                <a href="#" class="CAccount">Create account</a>
+                <a href="#" class="Signin">Sign in</a>
+                <a href="#" class="IOSapp">IOS app</a>
+                <a href="#" class="Androidapp">Android app</a>
+                <a href="#" class="Company">Company</a>
+                <a href="#" class="Aboutomnifood">About Omnifood</a>
+                <a href="#" class="Forbusiness">For Business</a>
+                <a href="#" class="Cookingpartners">Cooking partners</a>
+                <a href="#" class="Careers">Careers</a>
+                <a href="#" class="Resources">Resources</a>
+                <a href="#" class="Recipedirectory">Recipe directory</a>
+                <a href="#" class="Helpcenter">Help center</a>
+                <a href="#" class="Privacyterms">Privacy & terms</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
